@@ -32,6 +32,13 @@ router
   })
   .post('/new', (req, res, next) => {
     const { user, text } = req.body;
+    if (user.trim() === '' || text.trim() === '') {
+      return res.render('form', {
+        title: 'New Message',
+        user: user,
+        text: text,
+      });
+    }
     const added = new Date();
     messages.push({ text, user, added });
     res.redirect('/');
