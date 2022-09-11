@@ -1,0 +1,14 @@
+.new-message-form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 0.2rem;
+}
+
+.new-message-textarea {
+  padding: 0.5rem;
+}
+
+.new-message-user {
+  padding: 0.5rem;
+}
