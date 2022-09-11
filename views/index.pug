@@ -10,12 +10,13 @@ block content
   //-       p #{message.user}
   //-       p #{message.added}
 
-  a(class='new-msg-a' href='/new')
-    button(class='new-msg-btn') post a new message
+  a(class='new-msg-a' href='/new') post a new message
+    //- button(class='new-msg-btn') post a new message
 
   each message in messages
     div(class='message-card')
       div(class='mesage-text') #{message.text}
+      hr
       div(class='mesage-user-and-date')
-        span #{message.user}
-        span #{message.added}
+        span(class='message-user') #{message.user}
+        span(class='message-added') #{message.added}

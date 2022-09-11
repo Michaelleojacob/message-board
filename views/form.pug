@@ -4,7 +4,7 @@ block content
 
   form(class='new-message-form' action="/new" method='POST')
     label(for="new message text")
-    textarea(class='new-message-textarea' name="", cols="30", rows="10" placeholder="message")
+    textarea(class='new-message-textarea' name="text", cols="30", rows="10" placeholder="message")
     label(for="user")
-    input(class='new-message-user' type="text" placeholder="name")
-    button(type='submit') submit
+    input(class='new-message-user' name='user' type="text" placeholder="name")
+    button(class="new-msg-a" type='submit') submit

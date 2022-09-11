@@ -1,5 +1,59 @@
+.new-msg-a{
+  margin-bottom: 2em;
+}
+
+.new-msg-a{
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  justify-content: center;
+}
+
+.new-msg-a:active {
+  background-color: #006AE8;
+}
+
+.new-msg-a:hover {
+  background-color: #1C84FF;
+}
+
+.mesage-user-and-date{
+  display: flex;
+  justify-content: space-between;
+}
+
 .message-card {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  border: 1px solid black;
+  min-width: 60vw;
+  max-width: 60vw;
+  margin: 1em;
+  min-height: 3em;
+  justify-content: space-between;
+  gap: 1em;
+}
+.message-user{
+  color: rgb(35, 168, 213);
 }
